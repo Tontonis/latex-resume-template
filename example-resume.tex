@@ -1,0 +1,94 @@
+\documentclass[9pt]{res}
+\usepackage{color}
+\usepackage{hyperref}
+\oddsidemargin -.5in
+\evensidemargin -.5in
+%\textwidth=6.50in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+%\setlength{\pdfpagewidth}{\paperwidth}
+%\setlength{\pdfpageheight}{\paperheight}
+\raggedbottom
+
+% horizontal thick line
+\newcommand*\varhrulefill[1][0.4pt]{\leavevmode\leaders\hrule height#1\hfill\kern0pt}
+
+\definecolor{light-gray}{gray}{0.2}
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.20in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in} 
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+% this variable is about left column width
+\newsectionwidth{0in}
+
+
+\begin{document}
+
+{\LARGE \textbf{Zhang San}\vspace*{.07in}}\\
+\begin{tabular}{@{}p{5.8in}p{4.5in}}
+Room 1984, Dorm 42   & +86--111111111\\         
+Random University, Beijing & \href{mailto:i@i.com}{i@i.com}\\       
+\end{tabular}
+
+\begin{resume}
+
+\section{\large \color{light-gray}{Research Interests} }
+\noindent\varhrulefill[0.6mm] \vspace{1mm}\\
+{Natural Language Processing, Machine Learning}
+
+\section{\large \color{light-gray}{Education}}
+\noindent\varhrulefill[0.6mm] \vspace{1mm}\\
+{\bf Random University}, Beijing, China\\
+%{\em Department of Mathematics and Statistics} 
+\vspace*{-.1in}
+\begin{list1}
+\item[] B.A,  Computer Science, September 2009 (expected graduation date: July 2013)
+\end{list1}
+
+\section{\large \color{light-gray} Honors \& Awards}
+\noindent\varhrulefill[0.6mm] \vspace{1mm}\\
+\begin{tabular}{@{}p{.3in}p{7.1in}}
+{\bf 2012} & Microsoft Research Asia Scholarship\\ [.5ex]
+\end{tabular}
+
+\section{\large \color{light-gray} Research \& Engineer Experience}
+\noindent\varhrulefill[0.6mm] \vspace{1mm}\\
+{\bf \color{light-gray} Microsoft Research Asia}, Beijing, China\\
+\vspace{-.3cm}
+{\em Research and Software Development Engineer intern} \hfill {July 2012 - October 2012}\\
+\begin{list2}
+\item{Bing search}
+\end{list2}
+
+\section{\large \color{light-gray} Extracurricular Activies}
+\noindent\varhrulefill[0.6mm] \vspace{1mm}\\
+\begin{tabular}{@{}p{.3in}p{7.1in}}
+{\bf 2012} & student volunteer of 2012 ACM SIGKDD conference on Knowledge Discovery and Data Mining, Beijing\\ [.5ex]
+\end{tabular}
+
+
+\section{\large \color{light-gray} Skills} 
+\noindent\varhrulefill[0.6mm] \vspace{1mm}\\
+\begin{tabular}{@{}p{1.2in}p{6.2in}}
+Programming & Java, C++, Python with practical project experience, and many miscellaneous languages for fun such as Haskell, Ruby \\ [.5ex]
+Editor & Myeclipse, Emacs, Visual Studio\\ [.5ex]
+Operating System & Unix/Linux, Mac OS, Windows\\ [.5ex]
+\end{tabular}
+
+\end{resume}
+\end{document}
+
+
+
+
